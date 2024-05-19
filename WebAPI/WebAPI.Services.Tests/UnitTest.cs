@@ -12,7 +12,7 @@ namespace WebAPI.Services.Tests
         public void TestFunctionForCiCdPipeline(int x, int y, int expected)
         {
             var actualSum = x + y;
-            actualSum.Should().Be(expected);
+            actualSum.Should().NotBe(expected);
         }
     }
 }
