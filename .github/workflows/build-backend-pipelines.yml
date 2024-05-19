@@ -19,7 +19,7 @@ jobs:
         run: dotnet --version
 
       - name: Install dependencies
-        uses: dotnet build WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
+        run: dotnet build WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
 
       - name: Install dependencies
-        uses: dotnet publish WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
+        run: dotnet publish WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
