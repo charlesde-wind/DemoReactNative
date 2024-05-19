@@ -20,5 +20,5 @@ jobs:
       - name: Install dependencies
         run: dotnet build WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
 
-      - name: Publish
-        run: dotnet publish WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
+      - name: Execute tests
+        run: dotnet test WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
