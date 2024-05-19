@@ -3,17 +3,16 @@ name: dotnet package
 on: [push]
 
 env:
-  dotnet-version: "7.0.19"
+  dotnetVersion: '7.0.19'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup dotnet $dotnet-version
+      
+      - name: Setup dotnet $dotnetVersion
         uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: $dotnet-version
 
       - name: Display dotnet version
         run: dotnet --version
