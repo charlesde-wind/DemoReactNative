@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthProvider", "AuthProvide
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E56396E-D20E-4383-963F-B7C24F61AA96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Models", "Shared.Models\Shared.Models.csproj", "{DF5B54D9-867F-464F-B621-B51694E5A38E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Models", "Shared.Models\Shared.Models.csproj", "{DF5B54D9-867F-464F-B621-B51694E5A38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.Services.Tests", "WebAPI.Services.Tests\WebAPI.Services.Tests.csproj", "{1A888B19-712B-4D61-AE5C-4D587287701B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{DF5B54D9-867F-464F-B621-B51694E5A38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF5B54D9-867F-464F-B621-B51694E5A38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF5B54D9-867F-464F-B621-B51694E5A38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A888B19-712B-4D61-AE5C-4D587287701B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A888B19-712B-4D61-AE5C-4D587287701B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A888B19-712B-4D61-AE5C-4D587287701B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A888B19-712B-4D61-AE5C-4D587287701B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

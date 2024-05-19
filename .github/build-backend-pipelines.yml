@@ -1,0 +1,25 @@
+name: dotnet package
+
+on: [push]
+
+env:
+  dotnet-version: "7.0.19"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup dotnet $dotnet-version
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: $dotnet-version
+
+      - name: Display dotnet version
+        run: dotnet --version
+
+      - name: Install dependencies
+        uses: dotnet build WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
+
+      - name: Install dependencies
+        uses: dotnet publish WebAPI/WebAPI.Services.Tests/WebAPI.Services.Tests.csproj
